@@ -1,1 +1,1 @@
-# juros
+# https://hullmano.github.io/juros/
