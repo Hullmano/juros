@@ -9,7 +9,7 @@
 </head>
 <body onload="dateToday()">
 	<div class="wrap">
-		<h3>Adriano...</h3> 
+		<h3 id="tit"></h3> 
 		<h4>Contato: (XX)XXXXX-XXXX</h4> 
 		<div class="linha">
 			<label for="valChq">Informe o Valor do Cheque:</label>
@@ -346,7 +346,8 @@
 	//Checa se usuário logou.
 	var vUser = sessionStorage.getItem('user');
 	var vPsw  = sessionStorage.getItem('psw');
-	if (vUser == 'Adriano'){ 
+	if (vUser == 'Adriano' || vUser == 'Sergio') { 
+		document.getElementById('tit').innerHTML = vUser;
 		if (vPsw != '0001') {
 			alert('Senha Incorreta!')
 			window.location = 'index.html'
